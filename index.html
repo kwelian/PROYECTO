@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="java.js"></script>
+  </head>
+
+  <body>
+    <form
+      action="validar.php"
+      method="post"
+      id="loginForm"
+      onsubmit="showLoader()"
+    >
+      <div class="form-content">
+        <img
+          src="css/imagenes/Documento_sin_título-removebg-preview.png"
+          alt=""
+        />
+        <h3 class="animate__animated animate__backInLeft">Inicie Sesión</h3>
+
+        <p>
+          Usuario
+          <input type="text" placeholder="Ingrese su usuario" name="usuario" />
+        </p>
+
+        <p class="password-field">
+          Contraseña
+          <input
+            type="password"
+            placeholder="Ingrese su contraseña"
+            name="contraseña"
+          />
+          <a href="recuperar_contrasena.html" class="forgot-link"
+            >Recuperar contraseña</a
+          >
+        </p>
+
+        <input type="submit" value="Ingresar" id="submitButton" />
+        <div id="loader" class="loader"></div>
+      </div>
+    </form>
+  </body>
+</html>
